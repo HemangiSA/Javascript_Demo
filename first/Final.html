@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Can Validate Input</h2>
+
+<p>Please input a number between 1 and 10:</p>
+<form 
+<input id="numb">
+<label for="sub">Subject Interest: </label><br>
+		<input type="checkbox" id="cone" name="cone" value="one">
+		<label for="sub">HTML</label><br>
+		<input type="checkbox" id="tone" name="tone" value="two">
+		<label for="sub">CSS</label><br>
+		<input type="checkbox" id="tone" name="tone" value="three">
+		<label for="sub">Javascript</label><br>
+		<input type="checkbox" id="fone" name="fone" value="four">
+		<label for="sub">Bootstrap</label><br>
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+  x = document.getElementById("numb").value;
+  if (isNaN(x) || x < 1 && x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
